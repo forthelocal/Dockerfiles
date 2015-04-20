@@ -19,6 +19,6 @@ RUN echo "centos    ALL=(ALL)    NOPASSWD:ALL" >> /etc/sudoers.d/centos
 # https://access.redhat.com/documentation/ja-JP/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/s1-ssh-configuration.html#table-ssh-configuration-configs-system
 RUN /usr/bin/ssh-keygen -t rsa -b 2048 -f /etc/ssh/ssh_host_rsa_key -N ""
 
-EXPOSE 22
+EXPOSE 22 80
 ENTRYPOINT ["/sbin/init"]
 
