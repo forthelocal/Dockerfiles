@@ -1,7 +1,7 @@
 FROM centos:7
 MAINTAINER 164c <morotomi.hiroshi@gmail.com>
 
-RUN yum update && yum install -y \
+RUN yum update -y && yum install -y \
 openssh \
 openssh-clients \
 openssh-server \
